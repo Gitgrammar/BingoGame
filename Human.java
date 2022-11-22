@@ -6,7 +6,7 @@ public class Human {
    int coin;
    int BET;
 
-   Human(int age,String name,int coin,int COIN){
+   Human(int age,String name,int coin,int BET){
     this.age=age;
     this.name=name;
     this.coin=coin;
@@ -19,7 +19,7 @@ public class Human {
        
     }
     else{
-        System.out.printf("こんにちは%s(%d歳)さん%n残り枚数:%dBET枚数を入力。0で終了 1-100>",this.name,this.age,this.coin,this.BET);
+        System.out.printf("こんにちは%s(%d歳)さん%n残り枚数:%d",this.name,this.age,this.coin);
     }
    }
    

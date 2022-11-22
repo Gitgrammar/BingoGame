@@ -9,10 +9,15 @@ public class BingoApp {
     System.out.print("年齢を入れてください。>>");
     int age=sc.nextInt();
     int coin=100;
+    System.out.print("BET枚数を入力。0で終了　1-100>");
     int BET=sc.nextInt();
-    Human you=new Human(age,name,coin,BET);
+    if(BET==0){
+      System.out.println("終了します。");
+    }
+   else{
+      Human you=new Human(age,name,coin,BET);
   you.showInfo();
-    
+   }
     
    } 
 }
