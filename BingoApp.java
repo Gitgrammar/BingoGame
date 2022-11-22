@@ -1,4 +1,3 @@
-
 package BingoGame;
 import java.util.*;
 public class BingoApp {
@@ -11,11 +10,18 @@ public class BingoApp {
     int coin=100;
     System.out.print("BET枚数を入力。0で終了　1-100>");
     int BET=sc.nextInt();
+    Random rand=new Random();
+    
+   
     if(BET==0){
       System.out.println("終了します。");
     }
    else{
       Human you=new Human(age,name,coin,BET);
+      for(int i=0;i<BET;i++){
+         int select=rand.nextInt(100)+1;
+         System.out.println(select);
+       }
   you.showInfo();
    }
     
