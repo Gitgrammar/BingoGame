@@ -4,12 +4,14 @@ import java.util.*;
 public class BingoApp {
    public static void main(String[] args) {
     Scanner sc=new Scanner(System.in);
-    System.out.println("あなたの名前を入力してください。");
+    System.out.print("あなたの名前を入力してください。>>");
     String name=sc.next();
-    System.out.println("年齢を入れてください。");
+    System.out.print("年齢を入れてください。>>");
     int age=sc.nextInt();
-    Human you=new Human(age,name);
-    System.out.println(you);
+    int coin=100;
+    int BET=sc.nextInt();
+    Human you=new Human(age,name,coin,BET);
+  you.showInfo();
     
     
    } 
