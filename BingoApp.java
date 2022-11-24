@@ -29,9 +29,15 @@ public class BingoApp {
          }
          System.out.println();
          
+         }
+         if(array[0][0]==array[0][1]||array[0][0]==array[0][1]){
+            System.out.println("やったね");
+         }else{
+            System.out.println("残念でした。");
+         }
          
    }
     
    } 
 }
-}
+
