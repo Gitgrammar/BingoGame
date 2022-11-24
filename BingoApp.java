@@ -11,19 +11,24 @@ public class BingoApp {
     System.out.print("BET枚数を入力。0で終了　1-100>");
     int BET=sc.nextInt();
     Random rand=new Random();
-    
+    int i=0;
+    int j=0;
+   int [][]array=new int[i][j];
+
    
     if(BET==0){
       System.out.println("終了します。");
     }
    else{
-      Human you=new Human(age,name,coin,BET);
-      for(int i=0;i<BET;i++){
-         int select=rand.nextInt(100)+1;
-         System.out.println(select);
-       }
-  you.showInfo();
+      for(i=0;i<=0;i++){
+         for(j=0;j<=i;j++){
+             int pickedNum=rand.nextInt(9);
+             array[i][j]=pickedNum;
+             System.out.println(array[i][j]);
+         }
+         System.out.println();
    }
     
    } 
+}
 }
