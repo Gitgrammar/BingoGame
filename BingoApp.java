@@ -21,16 +21,15 @@ public class BingoApp {
     }
    else{
       System.out.println("0以外が押された");
-      for(int i=0;i<=3;i++){
-         for(int j=0;j<=i;j++){
-            int pickedNum=rand.nextInt(32);
-            System.out.println(pickedNum);
+      for(int i=0;i<=2;i++){
+         for(int j=0;j<=2;j++){
+            int pickedNum=rand.nextInt(9);
              array[i][j]=pickedNum;
-             System.out.println(array[i][j]);
+             System.out.print(array[i][j]);
          }
-         
-         
          System.out.println();
+         
+         
    }
     
    } 
