@@ -10,8 +10,14 @@ public class BingoApp {
     int coin=100;
     while(true){
    System.out.printf("%sさんの所持コイン:%d\n",name,coin);
+   if(coin<=0){
+      System.out.println("所持金がありません。終了します。");
+      break;
+   }
     System.out.print("BET枚数を入力。0で終了　1-100>");
+   
     int BET=sc.nextInt();
+    coin=coin-BET;
     Random rand=new Random();
     int [][]array=new int[3][3];
   
